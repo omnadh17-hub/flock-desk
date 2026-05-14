@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlockDesk – Speed up support and boost retention</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..700&family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common-workfile.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="siteHeader">
+        <div class="container">
+            <div class="inner-wrapper">
+
+                <a href="index.html" title="FlockDesk" class="logo-wrapper">
+                    <img src="./assets/flock-desk-logo.svg" alt="FlockDesk Logo" class="logo" width="171" height="44" />
+                </a>
+
+                <nav class="nav-bar" id="mainNav" role="navigation" aria-label="Main navigation">
+                    <ul class="top-wrap">
+                        <li class="menu-item active">
+                            <a href="index.html" class="nav-link" title="Home">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="nav-link" title="About">About</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="nav-link" title="Features">Features</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="nav-link" title="Pricing">Pricing</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="nav-link" title="Integrations">Integrations</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="nav-link" title="Resources">Resources</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="hdr-actions">
+                    <a href="#" class="btn-hdr">Sign In</a>
+                    <button class="hamburger-menu mob-tab-disp" type="button"
+                        aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20" fill="none" aria-hidden="true">
+                            <path d="M1 19H25M1 10H25M1 1H25" stroke="#33344E" stroke-width="2.2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="side-nav-close mob-tab-disp" type="button"
+                        aria-label="Close navigation menu">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M1 1L17 17M17 1L1 17" stroke="#33344E" stroke-width="2.2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Nav overlay backdrop (mobile) -->
+    <div class="nav-overlay" aria-hidden="true"></div>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+
+        <!-- ===== HERO / BANNER ===== -->
+        <section class="hero-sec" id="heroBanner">
+
+            <!-- Subtle grid overlay -->
+            <!-- <div class="hero-grid" aria-hidden="true"></div> -->
+
+            <!-- Center content -->
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="banner-hd text-center">
+                        <span class="gradient-txt">FlockDesk</span> speeds up
+                        support and boosts
+                        <span class="gradient-txt">retention.</span>
+                    </h1>
+                    <p class="txt text-center hero-desc">
+                        Deliver outstanding support and achieve new goals with FlockDesk.
+                    </p>
+                    <div class="hero-btn-wrapper">
+                        <a href="#" class="btn-hero-primary">Get Started</a>
+                        <a href="#" class="btn-hero-secondary">Get a Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Floating UI elements (desktop only, animated on scroll/hover) ── -->
+
+            <!-- Top-left: Add Reply card -->
+            <div class="float-el float-el--add-reply" aria-hidden="true">
+                <div class="float-card">
+                    <div class="float-card__icon">
+                        <img src="./assets/add-reply-icon.png" alt="" loading="lazy" />
+                    </div>
+                    <div class="float-card__body">
+                        <span class="float-card__title">Add Reply</span>
+                        <span class="float-card__desc">Add reply to your tickets</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top-center: Date icon badge -->
+            <div class="float-el float-el--date" aria-hidden="true">
+                <div class="float-badge">
+                    <img src="./assets/date-icon.png" alt="" loading="lazy" />
+                </div>
+            </div>
+
+            <!-- Top-right: Ticket Create card -->
+            <div class="float-el float-el--ticket-create" aria-hidden="true">
+                <div class="float-card">
+                    <div class="float-card__icon float-card__icon--purple">
+                        <img src="./assets/ticket-create.png" alt="" loading="lazy" />
+                    </div>
+                    <div class="float-card__body">
+                        <span class="float-card__title">Ticket Create</span>
+                        <span class="float-card__desc">Create ticket and get frequent support</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle-left: Change Status card -->
+            <div class="float-el float-el--change-status" aria-hidden="true">
+                <div class="float-card">
+                    <div class="float-card__icon float-card__icon--pink">
+                        <img src="./assets/change-status-icon.png" alt="" loading="lazy" />
+                    </div>
+                    <div class="float-card__body">
+                        <span class="float-card__title">Change Status</span>
+                        <span class="float-card__desc">Change your Ticket status after support</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle-right: Adjust icon badge -->
+            <div class="float-el float-el--adjust" aria-hidden="true">
+                <div class="float-badge">
+                    <img src="./assets/adjust-icon.png" alt="" loading="lazy" />
+                </div>
+            </div>
+
+            <!-- Lower-center-left: Edit icon badge -->
+            <div class="float-el float-el--edit-badge" aria-hidden="true">
+                <div class="float-badge">
+                    <img src="./assets/edit-icon.png" alt="" loading="lazy" />
+                </div>
+            </div>
+
+            <!-- Lower-left: Email card -->
+            <div class="float-el float-el--email" aria-hidden="true">
+                <div class="float-card float-card--email">
+                    <span class="float-card__label">Email</span>
+                    <div class="float-card__email-row">
+                        <div class="email-row__badge">
+                            <img src="./assets/mail-opened.png" alt="" loading="lazy" />
+                        </div>
+                        <span class="email-addr">noreply@mindbees.com</span>
+                        <div class="email-row__actions">
+                            <button class="email-action-btn" tabindex="-1">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 1L10 3.5L3.5 10H1V7.5L7.5 1Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <button class="email-action-btn" tabindex="-1">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 3H9.5M4 3V2H7V3M2.5 3L3 9.5H8L8.5 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="float-card__email-row">
+                        <span class="email-addr email-addr--inset">contact@beehivehub.com</span>
+                        <div class="email-row__actions">
+                            <button class="email-action-btn" tabindex="-1">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 1L10 3.5L3.5 10H1V7.5L7.5 1Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <button class="email-action-btn" tabindex="-1">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 3H9.5M4 3V2H7V3M2.5 3L3 9.5H8L8.5 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lower-right: Edit Team form card -->
+            <div class="float-el float-el--edit-team" aria-hidden="true">
+                <div class="float-card float-card--edit-team">
+                    <div class="edit-team__close" aria-hidden="true">&#x2715;</div>
+                    <div class="edit-team__header">
+                        <span class="float-card__title">Edit Team</span>
+                        <span class="float-card__desc">Modify your team's settings</span>
+                    </div>
+                    <div class="edit-team__field">
+                        <label>Team Name</label>
+                        <div class="edit-team__input">type here</div>
+                    </div>
+                    <div class="edit-team__field">
+                        <label>Status</label>
+                        <div class="edit-team__status-row">
+                            <span class="status-pill">Active</span>
+                            <div class="status-select">
+                                <span class="status-dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="edit-team__btn" tabindex="-1">
+                        <span class="edit-team__btn-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14" cy="14" r="14" fill="none" stroke="white" stroke-width="2" />
+                                <path d="M10 14L13 17L18 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        Update
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lower-center: Assign Ticket card -->
+            <div class="float-el float-el--assign-ticket" aria-hidden="true">
+                <div class="float-card">
+                    <div class="float-card__icon float-card__icon--purple">
+                        <img src="./assets/assign-ticket-icon.png" alt="" loading="lazy" />
+                    </div>
+                    <div class="float-card__body">
+                        <span class="float-card__title">Assign Ticket</span>
+                        <span class="float-card__desc">Assign Support to the team</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ===== END HERO ===== -->
+
+        <!-- ===== TRUSTED BY ===== -->
+        <section class="trusted-sec">
+            <div class="container">
+                <p class="trusted-tagline text-center">Trusted by leading companies worldwide</p>
+                <div class="trusted-logos">
+                    <div class="trusted-logo-item">
+                        <img src="./assets/shopify-logo.png" alt="Shopify" loading="lazy" />
+                    </div>
+                    <div class="trusted-logo-item">
+                        <img src="./assets/Stripe_Logo.png" alt="Stripe" loading="lazy" />
+                    </div>
+                    <div class="trusted-logo-item">
+                        <img src="./assets/Slack_Logo.png" alt="Slack" loading="lazy" />
+                    </div>
+                    <div class="trusted-logo-item">
+                        <img src="./assets/Zoom_logo.png" alt="Zoom" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== END TRUSTED BY ===== -->
+
+        <!-- ===== APP PREVIEW ===== -->
+        <section class="app-preview-sec">
+            <div class="container">
+                <div class="app-preview-imgs">
+                    <div class="app-preview-img app-preview-img--draft">
+                        <img src="./assets/mail-draft.png" alt="FlockDesk email compose view" loading="lazy" />
+                    </div>
+                    <div class="app-preview-img app-preview-img--inbox">
+                        <img src="./assets/Inbox.png" alt="FlockDesk inbox dashboard" loading="lazy" />
+                    </div>
+                    <div class="app-preview-img app-preview-img--opened">
+                        <img src="./assets/mail-opened.png" alt="FlockDesk email thread view" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== END APP PREVIEW ===== -->
+
+        <!-- ===== FEATURES TABS ===== -->
+        <section class="features-sec">
+            <div class="container">
+
+                <!-- Intro paragraph -->
+                <p class="hd-typ3 text-center features-intro">
+                    We are committed to providing <span class="inner-txt"> exceptional customer support </span> every day.<span class="inner-txt"></span> Our team carefully reviews each ticket </span>to ensure your concerns are understood, addressed, and resolved as quickly as possible. You can count on us to <span class="inner-txt">deliver consistent, reliable assistance </span> whenever you need it.
+                </p>
+
+                <!-- Tab navigation -->
+                <div class="features-tabs" role="tablist" aria-label="FlockDesk features">
+                    <button class="features-tab active" role="tab" aria-selected="true"
+                        aria-controls="features-panel-1" id="features-tab-1" data-tab="1">
+                        Ticket list
+                    </button>
+                    <button class="features-tab" role="tab" aria-selected="false"
+                        aria-controls="features-panel-2" id="features-tab-2" data-tab="2">
+                        Ticket view
+                    </button>
+                    <button class="features-tab" role="tab" aria-selected="false"
+                        aria-controls="features-panel-3" id="features-tab-3" data-tab="3">
+                        Automations
+                    </button>
+                    <button class="features-tab" role="tab" aria-selected="false"
+                        aria-controls="features-panel-4" id="features-tab-4" data-tab="4">
+                        Settings
+                    </button>
+                </div>
+
+                <!-- Tab panels wrapper -->
+                <div class="features-panels">
+
+                    <!-- Panel 1: Ticket list -->
+                    <div class="features-panel active" id="features-panel-1"
+                        role="tabpanel" aria-labelledby="features-tab-1" data-panel="1">
+                        <div class="features-panel__img">
+                            <img src="./assets/home-tab-ticketlist.png"
+                                alt="Ticket list dashboard" loading="lazy" />
+                        </div>
+                        <div class="features-panel__content">
+                            <h2 class="hd-typ2">Monitor and Respond to All Incoming Tickets</h2>
+                            <p class="txt features-panel__desc">
+                                View, organize, and manage all your customer support tickets from a
+                                single, unified dashboard. Track new issues, follow up on pending
+                                requests, and close resolved cases with ease. With filters, real-time
+                                updates, and intuitive tools, MindDesk helps you stay responsive and
+                                build lasting customer trust.
+                            </p>
+                            <div class="features-panel__nav">
+                                <button class="panel-nav-btn panel-nav-btn--prev" aria-label="Previous feature" disabled>
+                                    <svg width="57" height="12" viewBox="0 0 57 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.219669 6.05328C-0.0732231 5.76039 -0.0732231 5.28551 0.219669 4.99262L4.99264 0.219648C5.28553 -0.073245 5.76041 -0.073245 6.0533 0.219648C6.3462 0.512542 6.3462 0.987415 6.0533 1.28031L1.81066 5.52295L6.0533 9.76559C6.3462 10.0585 6.3462 10.5334 6.0533 10.8263C5.76041 11.1191 5.28553 11.1191 4.99264 10.8263L0.219669 6.05328ZM56.75 5.52295V6.27295H0.75V5.52295V4.77295H56.75V5.52295Z" fill="black"/>
+                                    </svg>
+                                </button>
+                                <button class="panel-nav-btn panel-nav-btn--next" aria-label="Next feature">
+                                    <svg width="57" height="12" viewBox="0 0 57 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M56.5303 6.05328C56.8232 5.76039 56.8232 5.28551 56.5303 4.99262L51.7574 0.219648C51.4645 -0.073245 50.9896 -0.073245 50.6967 0.219648C50.4038 0.512542 50.4038 0.987415 50.6967 1.28031L54.9393 5.52295L50.6967 9.76559C50.4038 10.0585 50.4038 10.5334 50.6967 10.8263C50.9896 11.1191 51.4645 11.1191 51.7574 10.8263L56.5303 6.05328ZM0 5.52295V6.27295H56V5.52295V4.77295H0V5.52295Z" fill="black"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2: Ticket view -->
+                    <div class="features-panel" id="features-panel-2"
+                        role="tabpanel" aria-labelledby="features-tab-2" data-panel="2" hidden>
+                        <div class="features-panel__img">
+                            <img src="./assets/home-tab-ticketview.png"
+                                alt="Ticket view interface" loading="lazy" />
+                        </div>
+                        <div class="features-panel__content">
+                            <h2 class="hd-typ2">Comprehensive View of Your Support Requests</h2>
+                            <p class="txt features-panel__desc">
+                                This section provides you with a clear and organized overview of all
+                                your support requests. From open issues to resolved tickets, you can
+                                track progress, review updates, and stay informed at every step. Our
+                                goal is to ensure complete transparency and make it easy for you to
+                                manage your interactions with your support team in one convenient place.
+                            </p>
+                            <div class="features-panel__nav">
+                                <button class="panel-nav-btn panel-nav-btn--prev" aria-label="Previous feature" disabled>
+                                    <svg width="57" height="12" viewBox="0 0 57 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.219669 6.05328C-0.0732231 5.76039 -0.0732231 5.28551 0.219669 4.99262L4.99264 0.219648C5.28553 -0.073245 5.76041 -0.073245 6.0533 0.219648C6.3462 0.512542 6.3462 0.987415 6.0533 1.28031L1.81066 5.52295L6.0533 9.76559C6.3462 10.0585 6.3462 10.5334 6.0533 10.8263C5.76041 11.1191 5.28553 11.1191 4.99264 10.8263L0.219669 6.05328ZM56.75 5.52295V6.27295H0.75V5.52295V4.77295H56.75V5.52295Z" fill="black"/>
+                                    </svg>
+                                </button>
+                                <button class="panel-nav-btn panel-nav-btn--next" aria-label="Next feature">
+                                    <svg width="57" height="12" viewBox="0 0 57 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M56.5303 6.05328C56.8232 5.76039 56.8232 5.28551 56.5303 4.99262L51.7574 0.219648C51.4645 -0.073245 50.9896 -0.073245 50.6967 0.219648C50.4038 0.512542 50.4038 0.987415 50.6967 1.28031L54.9393 5.52295L50.6967 9.76559C50.4038 10.0585 50.4038 10.5334 50.6967 10.8263C50.9896 11.1191 51.4645 11.1191 51.7574 10.8263L56.5303 6.05328ZM0 5.52295V6.27295H56V5.52295V4.77295H0V5.52295Z" fill="black"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3: Automations -->
+                    <div class="features-panel" id="features-panel-3"
+                        role="tabpanel" aria-labelledby="features-tab-3" data-panel="3" hidden>
+                        <div class="features-panel__img">
+                            <img src="./assets/home-tab-ticketautomation.png"
+                                alt="Ticket automation workflow" loading="lazy" />
+                        </div>
+                        <div class="features-panel__content">
+                            <h2 class="hd-typ2">Seamless Automations to Simplify Support</h2>
+                            <p class="txt features-panel__desc">
+                                Automations are designed to handle repetitive tasks so your team can
+                                focus on what truly matters — delivering great customer experiences.
+                                From auto-assigning tickets and sending timely updates to setting
+                                reminders and applying tags, our seamless automation ensures faster
+                                resolutions with minimal effort. This not only saves time but also
+                                brings consistency, accuracy, and efficiency to every support interaction.
+                            </p>
+                            <div class="features-panel__nav">
+                                <button class="panel-nav-btn panel-nav-btn--prev" aria-label="Previous feature" disabled>
+                                    <svg width="57" height="12" viewBox="0 0 57 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.219669 6.05328C-0.0732231 5.76039 -0.0732231 5.28551 0.219669 4.99262L4.99264 0.219648C5.28553 -0.073245 5.76041 -0.073245 6.0533 0.219648C6.3462 0.512542 6.3462 0.987415 6.0533 1.28031L1.81066 5.52295L6.0533 9.76559C6.3462 10.0585 6.3462 10.5334 6.0533 10.8263C5.76041 11.1191 5.28553 11.1191 4.99264 10.8263L0.219669 6.05328ZM56.75 5.52295V6.27295H0.75V5.52295V4.77295H56.75V5.52295Z" fill="black"/>
+                                    </svg>
+                                </button>
+                                <button class="panel-nav-btn panel-nav-btn--next" aria-label="Next feature">
+                                    <svg width="57" height="12" viewBox="0 0 57 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M56.5303 6.05328C56.8232 5.76039 56.8232 5.28551 56.5303 4.99262L51.7574 0.219648C51.4645 -0.073245 50.9896 -0.073245 50.6967 0.219648C50.4038 0.512542 50.4038 0.987415 50.6967 1.28031L54.9393 5.52295L50.6967 9.76559C50.4038 10.0585 50.4038 10.5334 50.6967 10.8263C50.9896 11.1191 51.4645 11.1191 51.7574 10.8263L56.5303 6.05328ZM0 5.52295V6.27295H56V5.52295V4.77295H0V5.52295Z" fill="black"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 4: Settings -->
+                    <div class="features-panel" id="features-panel-4"
+                        role="tabpanel" aria-labelledby="features-tab-4" data-panel="4" hidden>
+                        <div class="features-panel__img">
+                            <img src="./assets/home-tab-ticketsettings.png"
+                                alt="Account settings panel" loading="lazy" />
+                        </div>
+                        <div class="features-panel__content">
+                            <h2 class="hd-typ2">Manage Your Account &amp; Preferences</h2>
+                            <p class="txt features-panel__desc">
+                                View, organize, and manage all your customer support tickets from a
+                                single, unified dashboard. Track new issues, follow up on pending
+                                requests, and close resolved cases with ease. With filters, real-time
+                                updates, and intuitive tools, MindDesk helps you stay responsive and
+                                build lasting customer trust.
+                            </p>
+                            <div class="features-panel__nav">
+                                <button class="panel-nav-btn panel-nav-btn--prev" aria-label="Previous feature" disabled>
+                                    <svg width="57" height="12" viewBox="0 0 57 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.219669 6.05328C-0.0732231 5.76039 -0.0732231 5.28551 0.219669 4.99262L4.99264 0.219648C5.28553 -0.073245 5.76041 -0.073245 6.0533 0.219648C6.3462 0.512542 6.3462 0.987415 6.0533 1.28031L1.81066 5.52295L6.0533 9.76559C6.3462 10.0585 6.3462 10.5334 6.0533 10.8263C5.76041 11.1191 5.28553 11.1191 4.99264 10.8263L0.219669 6.05328ZM56.75 5.52295V6.27295H0.75V5.52295V4.77295H56.75V5.52295Z" fill="black"/>
+                                    </svg>
+                                </button>
+                                <button class="panel-nav-btn panel-nav-btn--next" aria-label="Next feature">
+                                    <svg width="57" height="12" viewBox="0 0 57 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M56.5303 6.05328C56.8232 5.76039 56.8232 5.28551 56.5303 4.99262L51.7574 0.219648C51.4645 -0.073245 50.9896 -0.073245 50.6967 0.219648C50.4038 0.512542 50.4038 0.987415 50.6967 1.28031L54.9393 5.52295L50.6967 9.76559C50.4038 10.0585 50.4038 10.5334 50.6967 10.8263C50.9896 11.1191 51.4645 11.1191 51.7574 10.8263L56.5303 6.05328ZM0 5.52295V6.27295H56V5.52295V4.77295H0V5.52295Z" fill="black"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ===== END FEATURES TABS ===== -->
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section class="about-sec">
+            <div class="container">
+                <div class="about-card">
+
+                    <!-- Two-column: content + layered visual -->
+                    <div class="about-inner">
+
+                        <!-- Left: Content -->
+                        <div class="about-content">
+                            <span class="about-label">About FlockDesk</span>
+                            <div class="about-app-icon">
+                                <img src="./assets/flockDeskSoftware.png" alt="FlockDesk" loading="lazy" />
+                            </div>
+                            <h2 class="hd-typ1 about-heading">Use FlockDesk software in your own way</h2>
+                            <p class="txt about-desc">
+                                Thrive on customer happiness with MindDesk! Stay accessible,
+                                deliver quick and accurate resolutions, and make doing
+                                business with you effortless.
+                            </p>
+                        </div>
+
+                        <!-- Right: Layered visual composition -->
+                        <div class="about-visual" aria-hidden="true">
+                            <img class="about-vis__bg" src="./assets/about-top-bg.png" alt="" loading="lazy" />
+                            <img class="about-vis__mailbox" src="./assets/about-mailbox.png" alt="" loading="lazy" />
+                            <img class="about-vis__notifications" src="./assets/about-notifications.png" alt="" loading="lazy" />
+                            <div class="about-vis__woman-wrap">
+                                <img src="./assets/about-woman-with-laptop.png" alt="Person using FlockDesk on a laptop" loading="lazy" />
+                            </div>
+                            <img class="about-vis__ticket" src="./assets/about-ticket-info.png" alt="" loading="lazy" />
+                            <img class="about-vis__dots about-vis__dots--left" src="./assets/about-dots.png" alt="" loading="lazy" />
+                            <img class="about-vis__dots about-vis__dots--right" src="./assets/about-dots.png" alt="" loading="lazy" />
+                        </div>
+
+                    </div>
+
+                    <!-- Bottom: Feature cards -->
+                    <div class="about-features">
+
+                        <div class="about-feature">
+                            <div class="about-feature__icon">
+                                <img src="./assets/handle-all-inbound-icon.png" alt="" loading="lazy" />
+                            </div>
+                            <h3 class="about-feature__title">Handle all inbound requests</h3>
+                            <p class="txt about-feature__desc">Capture every customer query from email, chat, phone, and web forms—turning them into organized, trackable tickets.</p>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="about-feature__icon">
+                                <img src="./assets/guided-convo-icon.png" alt="" loading="lazy" />
+                            </div>
+                            <h3 class="about-feature__title">Guided conversations</h3>
+                            <p class="txt about-feature__desc">Create structured conversation flows that guide users to the right answers with agent intervention.</p>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="about-feature__icon">
+                                <img src="./assets/twenty-four-bar-seven-icon.png" alt="" loading="lazy" />
+                            </div>
+                            <h3 class="about-feature__title">24/7 Support</h3>
+                            <p class="txt about-feature__desc">Deliver round-the-clock assistance to ensure customers always get the help they need.</p>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="about-feature__icon">
+                                <img src="./assets/service-level-icon.png" alt="" loading="lazy" />
+                            </div>
+                            <h3 class="about-feature__title">Service level agreements</h3>
+                            <p class="txt about-feature__desc">Promise customers the support they deserve with clear response and resolution commitments.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ===== END ABOUT ===== -->
+
+        <!-- ===== INTEGRATIONS ===== -->
+        <section class="integrations-sec" id="integrationsSec">
+
+            <div class="int-bg-grid" aria-hidden="true">
+
+                <!-- Row 1 -->
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot int-slot--icon"><img src="./assets/slack-icon.png" alt="Slack" loading="lazy" /></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+
+                <!-- Row 2 -->
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot int-slot--icon"><img src="./assets/gmail-icon.png" alt="Gmail" loading="lazy" /></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot int-slot--icon"><img src="./assets/microsoft-teams-icon.png" alt="Microsoft Teams" loading="lazy" /></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+
+                <!-- Row 3 -->
+                <div class="int-slot"></div>
+                <div class="int-slot int-slot--icon"><img src="./assets/linkedIn-icon.png" alt="LinkedIn" loading="lazy" /></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot int-slot--icon"><img src="./assets/shopify-icon.png" alt="Shopify" loading="lazy" /></div>
+                <div class="int-slot"></div>
+
+                <!-- Row 4 -->
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+
+                <!-- Row 5 -->
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot int-slot--icon"><img src="./assets/viber-icon.png" alt="Viber" loading="lazy" /></div>
+                <div class="int-slot int-slot--empty"></div>
+                <div class="int-slot int-slot--empty"></div>
+                <div class="int-slot int-slot--empty"></div>
+                <div class="int-slot int-slot--empty"></div>
+                <div class="int-slot int-slot--empty"></div>
+                <div class="int-slot int-slot--empty"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+
+                <!-- Row 6 -->
+                <div class="int-slot int-slot--icon"><img src="./assets/twitch-icon.png" alt="Twitch" loading="lazy" /></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot int-slot--empty"></div>
+                <div class="int-slot int-slot--empty"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot int-slot--icon"><img src="./assets/zapier-icon.png" alt="Zapier" loading="lazy" /></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+
+                <!-- Row 7 -->
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot int-slot--icon"><img src="./assets/vk-icon.png" alt="VK" loading="lazy" /></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot int-slot--icon"><img src="./assets/telegram-icon.png" alt="Telegram" loading="lazy" /></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+                <div class="int-slot"></div>
+
+            </div><!-- /.int-bg-grid -->
+
+            <div class="int-content-wrap">
+                <div class="int-content">
+                    <span class="int-label">Integrates with apps you use daily</span>
+                    <h2 class="hd-typ1 int-heading">The perfect hub for all your essential business apps.</h2>
+                    <p class="txt int-desc">
+                        Discover our multi-channel toolset with 130+ ticketing features and 200+ integrations with the tools you love.
+                    </p>
+                    <a href="#" class="btn-int">Get Started</a>
+                </div>
+            </div>
+
+        </section>
+        <!-- ===== END INTEGRATIONS ===== -->
+
+        <!-- ===== FEAT GRID ===== -->
+        <section class="feat-grid-sec">
+            <div class="container">
+                <div class="feat-grid">
+
+                    <!-- Card 1: Manage customer messages -->
+                    <article class="feat-card feat-card--1">
+                        <div class="feat-card__body">
+                            <h3 class="hd-typ5 feat-card__title">Manage all your customer messages</h3>
+                            <p class="txt feat-card__desc">Keep customers informed with powerful messaging and real-time ticket updates. Deliver the high-quality support they expect.</p>
+                        </div>
+                        <div class="feat-card__visual" aria-hidden="true">
+                            <img class="fc-img fc1-interface" src="./assets/left-card-interface.png"     alt="" loading="lazy" />
+                            <img class="fc-img fc1-chat"      src="./assets/left-card-chat.png"          alt="" loading="lazy" />
+                            <img class="fc-img fc1-inbox"     src="./assets/left-card-inbox.png"         alt="" loading="lazy" />
+                            <img class="fc-img fc1-edit"      src="./assets/left-card-edit.png"          alt="" loading="lazy" />
+                            <img class="fc-img fc1-many-more" src="./assets/left-card-many-more.png"     alt="" loading="lazy" />
+                            <img class="fc-img fc1-pointer"   src="./assets/left-card-icon-pointer.png"  alt="" loading="lazy" />
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Collaborate with team -->
+                    <article class="feat-card feat-card--2">
+                        <div class="feat-card__body">
+                            <h3 class="hd-typ5 feat-card__title">Collaborate with your team</h3>
+                            <p class="txt feat-card__desc">Work seamlessly with your team to resolve issues faster, while keeping customers updated every step of the way.</p>
+                        </div>
+                        <div class="feat-card__visual" aria-hidden="true">
+                            <img class="fc-img fc2-face fc2-face--1" src="./assets/top-right-card-face-1.png"    alt="" loading="lazy" />
+                            <img class="fc-img fc2-face fc2-face--2" src="./assets/top-right-card-face-2.png"    alt="" loading="lazy" />
+                            <img class="fc-img fc2-face fc2-face--3" src="./assets/top-right-card-face-3.png"    alt="" loading="lazy" />
+                            <img class="fc-img fc2-face fc2-face--4" src="./assets/top-right-card-face-4.png"    alt="" loading="lazy" />
+                            <img class="fc-img fc2-face fc2-face--5" src="./assets/top-right-card-face-5.png"    alt="" loading="lazy" />
+                            <img class="fc-img fc2-face fc2-face--6" src="./assets/top-right-card-face-6.png"    alt="" loading="lazy" />
+                            <img class="fc-img fc2-interface"        src="./assets/top-right-card-interface.png" alt="" loading="lazy" />
+                            <img class="fc-img fc2-draft"            src="./assets/top-right-card-draft.png"     alt="" loading="lazy" />
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Automate (horizontal text layout) -->
+                    <article class="feat-card feat-card--3">
+                        <div class="feat-card__body feat-card__body--row">
+                            <h3 class="hd-typ5 feat-card__title">Automate your Ticket response</h3>
+                            <p class="txt feat-card__desc">Effortlessly decrease support volumes and boost customer satisfaction with automation.</p>
+                        </div>
+                        <div class="feat-card__visual" aria-hidden="true">
+                            <img class="fc-img fc3-main" src="./assets/bottom-left-main-img.png" alt="" loading="lazy" />
+                            <img class="fc-img fc3-tree" src="./assets/bottom-left-tree.png"     alt="" loading="lazy" />
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Ticket Compose -->
+                    <article class="feat-card feat-card--4">
+                        <div class="feat-card__body">
+                            <h3 class="hd-typ5 feat-card__title">Clean and user friendly Ticket Compose</h3>
+                            <p class="txt feat-card__desc">Create and send detailed responses directly from your helpdesk, with rich text formatting, attachments, and canned replies.</p>
+                        </div>
+                        <div class="feat-card__visual" aria-hidden="true">
+                            <img class="fc-img fc4-puzzle"  src="./assets/bottom-right-puzzle.png"       alt="" loading="lazy" />
+                            <img class="fc-img fc4-main"    src="./assets/bottom-right-main-img.png"     alt="" loading="lazy" />
+                            <img class="fc-img fc4-update"  src="./assets/bottom-right-update-token.png" alt="" loading="lazy" />
+                            <img class="fc-img fc4-message" src="./assets/bottom-right-message.png"      alt="" loading="lazy" />
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!-- ===== END FEAT GRID ===== -->
+
+        <!-- ===== FAQ ===== -->
+        <section class="faq-sec">
+            <div class="container">
+
+                <div class="faq-header">
+                    <span class="faq-label">Frequently Asked Questions</span>
+                    <h2 class="hd-typ4 faq-heading">Need Help? Start with our FAQ</h2>
+                </div>
+
+                <div class="faq-list">
+
+                    <div class="faq-item active">
+                        <button class="faq-trigger" id="faq-btn-1" type="button" aria-expanded="false" aria-controls="faq-panel-1">
+                            <span class="faq-question">What is a FlockDesk?</span>
+                            <span class="faq-arrow" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#9C9C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1">
+                            <div class="faq-panel-inner">
+                                <p class="faq-answer">FlockDesk is a modern help desk platform that centralises customer communication across multiple channels — email, live chat, social media, and more — into a single, unified inbox, helping your team deliver faster, smarter support at every touchpoint.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" id="faq-btn-2" type="button" aria-expanded="false" aria-controls="faq-panel-2">
+                            <span class="faq-question">How does a FlockDesk work?</span>
+                            <span class="faq-arrow" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#9C9C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2">
+                            <div class="faq-panel-inner">
+                                <p class="faq-answer">A help desk system like FlockDesk manages support requests — known as tickets — submitted by users through channels such as email, phone, or online forms. When users encounter specialised issues or need assistance, they reach out and FlockDesk automatically organises and prioritises these tickets based on urgency and issue type. The system assigns each ticket to the right support agent or team, ensuring quick and accurate resolution. Throughout the process, FlockDesk keeps users updated on ticket status and progress with clear, timely communication. Once the issue is resolved, FlockDesk provides the solution to the user and closes the ticket, delivering a smooth, efficient support experience.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" id="faq-btn-3" type="button" aria-expanded="false" aria-controls="faq-panel-3">
+                            <span class="faq-question">Does FlockDesk provide 24/7 support?</span>
+                            <span class="faq-arrow" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#9C9C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3">
+                            <div class="faq-panel-inner">
+                                <p class="faq-answer">Yes. FlockDesk's automation tools, AI-powered chatbots, and self-service knowledge base allow you to resolve customer queries around the clock — even outside your team's working hours — without sacrificing quality.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" id="faq-btn-4" type="button" aria-expanded="false" aria-controls="faq-panel-4">
+                            <span class="faq-question">How does FlockDesk handle tickets?</span>
+                            <span class="faq-arrow" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#9C9C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4">
+                            <div class="faq-panel-inner">
+                                <p class="faq-answer">Every incoming request is automatically converted into a ticket, categorised by priority and channel, and routed to the most suitable agent. You can set SLA policies, automate follow-ups, and track resolution progress — all from one unified dashboard.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" id="faq-btn-5" type="button" aria-expanded="false" aria-controls="faq-panel-5">
+                            <span class="faq-question">Is FlockDesk software safe?</span>
+                            <span class="faq-arrow" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#9C9C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-panel" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5">
+                            <div class="faq-panel-inner">
+                                <p class="faq-answer">Absolutely. FlockDesk employs industry-standard encryption (TLS in transit, AES-256 at rest), role-based access control, two-factor authentication, and regular third-party security audits to keep your data and your customers' data fully protected.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" id="faq-btn-6" type="button" aria-expanded="false" aria-controls="faq-panel-6">
+                            <span class="faq-question">What's the price of FlockDesk</span>
+                            <span class="faq-arrow" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#9C9C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-panel" id="faq-panel-6" role="region" aria-labelledby="faq-btn-6">
+                            <div class="faq-panel-inner">
+                                <p class="faq-answer">FlockDesk offers flexible plans starting with a free tier for small teams. Paid plans unlock advanced automation, analytics, integrations, and priority support. Visit our Pricing page for a full breakdown of features per plan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" id="faq-btn-7" type="button" aria-expanded="false" aria-controls="faq-panel-7">
+                            <span class="faq-question">Does FlockDesk software have any integrations?</span>
+                            <span class="faq-arrow" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#9C9C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-panel" id="faq-panel-7" role="region" aria-labelledby="faq-btn-7">
+                            <div class="faq-panel-inner">
+                                <p class="faq-answer">Yes — FlockDesk connects with 200+ tools including Slack, Gmail, Microsoft Teams, Shopify, Zapier, Telegram, and more. Whether you need CRM sync, e-commerce alerts, or custom webhooks, our integration library has you covered.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- ===== END FAQ ===== -->
+
+        <!-- ===== BLOG ===== -->
+        <section class="blog-sec" id="blogSec">
+            <div class="container">
+
+                <div class="blog-layout">
+
+                    <!-- LEFT: Active blog display -->
+                    <div class="blog-display">
+                        <!-- Panel 1 (active) -->
+                        <div class="blog-panel" id="blog-panel-1">
+                            <span class="blog-panel__tag">Blog</span>
+                            <h2 class="hd-typ2 blog-panel__title">The Power of an Organized Ticketing System</h2>
+                            <p class="blog-panel__date">May 10, 2025</p>
+                            <p class="blog-panel__excerpt">Discover how a well-structured ticketing system can transform your support team's efficiency, reduce response times, and create a seamless experience for both agents and customers.</p>
+                            <div class="blog-panel__img-wrap">
+                                <img src="./assets/blog-section-left-img-interface-img.png" alt="The Power of an Organized Ticketing System" class="blog-panel__img" width="600" height="380" loading="lazy" />
+                            </div>
+                        </div>
+                        <!-- Panel 2 -->
+                        <div class="blog-panel" id="blog-panel-2" hidden>
+                            <span class="blog-panel__tag">Blog</span>
+                            <h2 class="hd-typ2 blog-panel__title">Unlock Faster Resolutions and Happier Customers with Better Ticketing</h2>
+                            <p class="blog-panel__date">April 28, 2025</p>
+                            <p class="blog-panel__excerpt">Learn the strategies and tools that high-performing support teams use to resolve tickets faster, exceed customer expectations, and build long-lasting loyalty.</p>
+                            <div class="blog-panel__img-wrap">
+                                <img src="./assets/blog-section-left-img-interface-img.png" alt="Unlock Faster Resolutions" class="blog-panel__img" width="600" height="380" loading="lazy" />
+                            </div>
+                        </div>
+                        <!-- Panel 3 -->
+                        <div class="blog-panel" id="blog-panel-3" hidden>
+                            <span class="blog-panel__tag">Blog</span>
+                            <h2 class="hd-typ2 blog-panel__title">A Complete Guide to Efficient, Customer-Centric Support Workflows</h2>
+                            <p class="blog-panel__date">April 14, 2025</p>
+                            <p class="blog-panel__excerpt">Build support workflows that put the customer first. This guide covers everything from ticket routing to escalation paths, ensuring no request ever falls through the cracks.</p>
+                            <div class="blog-panel__img-wrap">
+                                <img src="./assets/blog-section-left-img-interface-img.png" alt="Customer-Centric Support Workflows" class="blog-panel__img" width="600" height="380" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Separator (desktop only) -->
+                    <div class="blog-sep" aria-hidden="true"></div>
+
+                    <!-- RIGHT: Blog navigation list -->
+                    <nav class="blog-nav" aria-label="Blog posts">
+                        <button class="blog-nav__item active" data-panel="blog-panel-1" type="button" aria-pressed="true">
+                            <div class="blog-nav__content">
+                                <p class="blog-nav__date">May 10, 2025</p>
+                                <h3 class="blog-nav__title">The Power of an Organized Ticketing System</h3>
+                                <p class="blog-nav__excerpt">Discover how a well-structured ticketing system can transform your support team's efficiency.</p>
+                            </div>
+                            <span class="blog-nav__icon-wrap" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                                    <path d="M3.5 14.5L14.5 3.5M14.5 3.5H7.5M14.5 3.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <div class="blog-nav__divider" aria-hidden="true"></div>
+
+                        <button class="blog-nav__item" data-panel="blog-panel-2" type="button" aria-pressed="false">
+                            <div class="blog-nav__content">
+                                <p class="blog-nav__date">April 28, 2025</p>
+                                <h3 class="blog-nav__title">Unlock Faster Resolutions and Happier Customers with Better Ticketing</h3>
+                                <p class="blog-nav__excerpt">Learn the strategies that high-performing support teams use to resolve tickets faster.</p>
+                            </div>
+                            <span class="blog-nav__icon-wrap" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                                    <path d="M3.5 14.5L14.5 3.5M14.5 3.5H7.5M14.5 3.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <div class="blog-nav__divider" aria-hidden="true"></div>
+
+                        <button class="blog-nav__item" data-panel="blog-panel-3" type="button" aria-pressed="false">
+                            <div class="blog-nav__content">
+                                <p class="blog-nav__date">April 14, 2025</p>
+                                <h3 class="blog-nav__title">A Complete Guide to Efficient, Customer-Centric Support Workflows</h3>
+                                <p class="blog-nav__excerpt">Build support workflows that put the customer first and ensure no request falls through the cracks.</p>
+                            </div>
+                            <span class="blog-nav__icon-wrap" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                                    <path d="M3.5 14.5L14.5 3.5M14.5 3.5H7.5M14.5 3.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </nav>
+
+                </div>
+            </div>
+        </section>
+        <!-- ===== END BLOG ===== -->
+
+        <!-- ===== CTA ===== -->
+        <section class="ctc-sec" id="ctcSec">
+            <div class="container">
+                <div class="ctc-layout">
+
+                    <!-- Left: form content -->
+                    <div class="ctc-left">
+                        <h2 class="hd-typ4 ctc-heading">Ready to Transform Your Customer Support?</h2>
+                        <p class="ctc-desc">Join over 50,000 companies using FlockDesk to deliver exceptional customer experiences. Start your free trial today and see the difference in minutes.</p>
+                        <form class="ctc-form" action="#" method="post" novalidate>
+                            <div class="ctc-input-wrap">
+                                <input
+                                    type="email"
+                                    class="ctc-input"
+                                    placeholder="Enter work email"
+                                    required
+                                    autocomplete="email"
+                                    aria-label="Work email address"
+                                />
+                                <button type="submit" class="ctc-btn">Sign Up</button>
+                            </div>
+                        </form>
+                        <p class="ctc-footnote">Free 14-day trial &nbsp;·&nbsp; No credit card required &nbsp;·&nbsp; Advanced ticketing made easy</p>
+                    </div>
+
+                    <!-- Right: dashboard image -->
+                    <div class="ctc-right" aria-hidden="true">
+                        <img src="./assets/ctc-right-side-img.png" alt="" class="ctc-img" loading="lazy" />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ===== END CTA ===== -->
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="siteFooter">
+        <div class="container">
+            <div class="footer-inner">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo-link" title="FlockDesk">
+                        <img src="./assets/flock-desk-logo.svg" alt="FlockDesk" class="footer-logo" width="171" height="44" loading="lazy" />
+                    </a>
+                    <p class="footer-tagline">The complete SaaS solution for task management and team productivity.</p>
+                    <p class="footer-copy">&copy; 2025 FlockDesk. All rights reserved.</p>
+                </div>
+
+                <!-- Nav link columns -->
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h3 class="footer-col__heading">Product</h3>
+                        <ul class="footer-col__list">
+                            <li><a href="#" class="footer-col__link">Features</a></li>
+                            <li><a href="#" class="footer-col__link">Pricing</a></li>
+                            <li><a href="#" class="footer-col__link">Mobile App</a></li>
+                            <li><a href="#" class="footer-col__link">Integrations</a></li>
+                            <li><a href="#" class="footer-col__link">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-col__heading">Company</h3>
+                        <ul class="footer-col__list">
+                            <li><a href="#" class="footer-col__link">About</a></li>
+                            <li><a href="#" class="footer-col__link">Blog</a></li>
+                            <li><a href="#" class="footer-col__link">Careers</a></li>
+                            <li><a href="#" class="footer-col__link">Contact</a></li>
+                            <li><a href="#" class="footer-col__link">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-col__heading">Support</h3>
+                        <ul class="footer-col__list">
+                            <li><a href="#" class="footer-col__link">Help Center</a></li>
+                            <li><a href="#" class="footer-col__link">Documentation</a></li>
+                            <li><a href="#" class="footer-col__link">Community</a></li>
+                            <li><a href="#" class="footer-col__link">Status</a></li>
+                            <li><a href="#" class="footer-col__link">Contact Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-col__heading">Legal</h3>
+                        <ul class="footer-col__list">
+                            <li><a href="#" class="footer-col__link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-col__link">Terms of Service</a></li>
+                            <li><a href="#" class="footer-col__link">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CTA buttons -->
+                <div class="footer-cta-col">
+                    <h3 class="footer-cta-col__heading">Start your free trial today</h3>
+                    <div class="footer-cta-col__btns">
+                        <a href="#" class="footer-btn footer-btn--dark">Start Free Trial</a>
+                        <a href="#" class="footer-btn footer-btn--blue">Live Chat</a>
+                    </div>
+                </div>
+
+                <!-- Social links -->
+                <div class="footer-social-col">
+                    <h3 class="footer-social-col__heading">Connect with</h3>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="#" class="footer-social-item">
+                                <img src="./assets/facebook-footer-icon.png" alt="" class="footer-social-item__icon" width="20" height="20" loading="lazy" aria-hidden="true" />
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-social-item">
+                                <img src="./assets/X-footer-icon.png" alt="" class="footer-social-item__icon" width="20" height="20" loading="lazy" aria-hidden="true" />
+                                <span>X</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-social-item">
+                                <img src="./assets/linkedIn-footer-icon.png" alt="" class="footer-social-item__icon" width="20" height="20" loading="lazy" aria-hidden="true" />
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-social-item">
+                                <img src="./assets/instagram-footer-icon.png" alt="" class="footer-social-item__icon" width="20" height="20" loading="lazy" aria-hidden="true" />
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- ===== END FOOTER ===== -->
+
+    <!-- GSAP for banner animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="./js/custom.js" defer></script>
+</body>
+</html>
