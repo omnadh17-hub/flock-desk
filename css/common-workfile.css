@@ -33,6 +33,7 @@
   --dark-color3:#282828;
   --dark-color4:#3A3946;
   --dark-color5:#292D32;
+  --dark-color6:#2B3130;
   --gradient1: linear-gradient(90deg, #503ACA 0%, #8CDCFF 100%);
   --gradient2:linear-gradient(180deg, #FFF 0%, #D7DDFF 100%);
   --gradient3:linear-gradient(45deg, #FFF 0%, var(--tertiary-color) 20%, var(--tertiary-color) 100%);

@@ -178,9 +178,9 @@ html.menu-open .side-nav-close {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--dark-color);
+  background: var(--dark-color6);
   color: var(--light-color);
-  border: 2px solid var(--dark-color);
+  border: 2px solid var(--dark-color6);
   border-radius: 10px;
   padding: 9px 22px;
   font-size: var(--font-size-3);
