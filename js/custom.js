@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // ─── Hamburger / side-nav ─────────────────────────────────────────────────
     var hamburgerBtn = document.querySelector('.hamburger-menu');
     var closeBtn     = document.querySelector('.side-nav-close');
     var navOverlay   = document.querySelector('.nav-overlay');
@@ -33,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (window.innerWidth >= 992 && html.classList.contains('menu-open')) closeNav();
     });
 
-    // ─── Header: add shadow on scroll ────────────────────────────────────────
     var header = document.getElementById('siteHeader');
 
     function updateHeaderState() {
@@ -44,20 +42,16 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', updateHeaderState, { passive: true });
     updateHeaderState();
 
-    // ─── Banner floating elements – GSAP animation ───────────────────────────
-    // Only runs on desktop (992px+) and when GSAP is available
     if (typeof gsap === 'undefined' || window.innerWidth < 992) return;
 
     var floatEls = document.querySelectorAll('.float-el');
     if (!floatEls.length) return;
 
-    // Respect reduced-motion preference: show instantly without animation
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         floatEls.forEach(function (el) { gsap.set(el, { opacity: 1, x: 0, y: 0 }); });
         return;
     }
 
-    // Initial offsets (elements start off-screen in their travel direction)
     var initMap = {
         'float-el--add-reply':     { x: -72, y: 0  },
         'float-el--date':          { x: 0,   y: -48 },
@@ -84,10 +78,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var ease     = 'power3.out';
         var duration = 0.72;
+        var tl       = gsap.timeline();
 
-        var tl = gsap.timeline();
-
-        // Left-side cards (staggered)
         tl.to(
             ['.float-el--add-reply', '.float-el--change-status', '.float-el--email']
                 .map(function (s) { return document.querySelector(s); })
@@ -95,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
             { opacity: 1, x: 0, duration: duration, ease: ease, stagger: 0.13 }
         );
 
-        // Right-side cards (overlap with left, staggered)
         tl.to(
             ['.float-el--ticket-create', '.float-el--adjust', '.float-el--edit-team']
                 .map(function (s) { return document.querySelector(s); })
@@ -104,14 +95,12 @@ document.addEventListener('DOMContentLoaded', function () {
             '-=0.55'
         );
 
-        // Top badge (from above, overlapping start)
         tl.to(
             document.querySelector('.float-el--date'),
             { opacity: 1, y: 0, duration: duration, ease: ease },
             '-=0.62'
         );
 
-        // Bottom elements (slide up, slight delay after main wave)
         tl.to(
             ['.float-el--edit-badge', '.float-el--assign-ticket']
                 .map(function (s) { return document.querySelector(s); })
@@ -121,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     }
 
-    // Trigger on scroll > 50px
     function onScrollTrigger() {
         if (window.scrollY > 50) {
             playBannerAnimation();
@@ -130,7 +118,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     window.addEventListener('scroll', onScrollTrigger, { passive: true });
 
-    // Also trigger on first mouse-enter of the banner
     var heroBanner = document.getElementById('heroBanner');
     if (heroBanner) {
         heroBanner.addEventListener('mouseenter', function () {
@@ -140,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// ─── Features Tabs ────────────────────────────────────────────────────────────
 (function () {
     var tabs   = document.querySelectorAll('.features-tab');
     var panels = document.querySelectorAll('.features-panel');
@@ -188,11 +174,9 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 
-    // Set initial disabled states
     activateTab(0);
 }());
 
-// ─── FAQ Accordion ────────────────────────────────────────────────────────────
 (function () {
     var items = document.querySelectorAll('.faq-item');
     if (!items.length) return;
@@ -204,14 +188,12 @@ document.addEventListener('DOMContentLoaded', function () {
         trigger.addEventListener('click', function () {
             var isActive = item.classList.contains('active');
 
-            // Close every open item
             items.forEach(function (el) {
                 el.classList.remove('active');
                 var btn = el.querySelector('.faq-trigger');
                 if (btn) btn.setAttribute('aria-expanded', 'false');
             });
 
-            // If this item was not open, open it now
             if (!isActive) {
                 item.classList.add('active');
                 trigger.setAttribute('aria-expanded', 'true');
@@ -220,7 +202,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 }());
 
-// ─── Blog Tabs ────────────────────────────────────────────────────────────────
 (function () {
     var navItems = document.querySelectorAll('.blog-nav__item');
     if (!navItems.length) return;
@@ -229,18 +210,15 @@ document.addEventListener('DOMContentLoaded', function () {
         var panelId = btn.getAttribute('data-panel');
         if (!panelId) return;
 
-        // Deactivate all nav items
         navItems.forEach(function (item) {
             item.classList.remove('active');
             item.setAttribute('aria-pressed', 'false');
         });
 
-        // Hide all panels
         document.querySelectorAll('.blog-panel').forEach(function (panel) {
             panel.setAttribute('hidden', '');
         });
 
-        // Activate clicked item and show its panel
         btn.classList.add('active');
         btn.setAttribute('aria-pressed', 'true');
 
