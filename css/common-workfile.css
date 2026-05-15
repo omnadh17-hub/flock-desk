@@ -53,7 +53,7 @@
   --font-family-cursive: "Redressed", cursive;
   --box-shadow-1: 0 24px 64px 0 rgba(0, 0, 0, 0.05);
   --box-shadow-2: 0 24px 64px 0 rgba(0, 0, 0, 0.06);
-  --box-shadow-3: 0 24px 64px 0 rgba(0, 0, 0, 0.1);
+  --box-shadow-3: 0 6px 64px 0 rgba(0, 31, 97, 0.05);
 }
 
 @media (min-width: 768px) {
