@@ -203,6 +203,26 @@ document.addEventListener('DOMContentLoaded', function () {
 }());
 
 (function () {
+    if (window.innerWidth < 992) return;
+
+    var cards = document.querySelectorAll('.feat-card');
+    if (!cards.length || !('IntersectionObserver' in window)) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.18 });
+
+    cards.forEach(function (card) {
+        observer.observe(card);
+    });
+}());
+
+(function () {
     var navItems = document.querySelectorAll('.blog-nav__item');
     if (!navItems.length) return;
 

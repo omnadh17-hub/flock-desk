@@ -161,7 +161,6 @@ html.menu-open {
     justify-content: center;
     background: var(--dark-color6);
     color: var(--light-color);
-    border: 2px solid var(--dark-color6);
     border-radius: 10px;
     padding: 9px 22px;
     font-size: var(--font-size-3);
@@ -170,13 +169,13 @@ html.menu-open {
     cursor: pointer;
     text-decoration: none;
     white-space: nowrap;
-    transition: background 0.28s ease, color 0.28s ease, border-color 0.28s ease;
-
+    transition: background 0.28s ease, color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
 
     @media (min-width: 992px) {
         &:hover {
-            background: transparent;
-            color: var(--dark-color);
+            background: var(--success-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(66, 93, 232, 0.25);
         }
     }
 }
@@ -332,9 +331,10 @@ html.menu-open {
 
     @media (min-width: 992px) {
         &:hover {
-            background: transparent;
-            color: var(--dark-color);
-            box-shadow: 0 8px 28px rgba(51, 52, 78, 0.18);
+            background: var(--success-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(66, 93, 232, 0.25);
+            border-color: var(--success-color);
         }
     }
 }
@@ -723,7 +723,7 @@ html.menu-open {
 //  8. TRUSTED BY SECTION
 // ─────────────────────────────────────────────────────────────
 .trusted-sec {
-    background: #ffffff;
+    background: var(--tertiary-color);
     padding: 60px 0 48px;
 
     @media (min-width: 768px)  { padding: 72px 0 56px; }
@@ -771,7 +771,7 @@ html.menu-open {
 //  9. APP PREVIEW SECTION
 // ─────────────────────────────────────────────────────────────
 .app-preview-sec {
-    background: #ffffff;
+    background: linear-gradient(to top, transparent calc(100% - 400px), var(--tertiary-color) calc(100% - 400px));
     padding-bottom: 60px;
 
     @media (min-width: 768px)  { padding-bottom: 80px; }
@@ -802,7 +802,7 @@ html.menu-open {
     &--draft {
         flex: 0 0 36%;
         display: none;
-        @media (min-width: 768px) { display: block; }
+        @media (min-width: 768px) { display: block;box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.08); }
         @media (min-width: 1200px) { margin-right: -15%;margin-bottom:30px;right:-100px; }
     }
 
@@ -817,7 +817,7 @@ html.menu-open {
         flex: 0 0 28%;
         display: none;
 
-        @media (min-width: 768px) { display: block; }
+        @media (min-width: 768px) { display: block;box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.08); }
         @media (min-width: 1200px) { margin-left: -8%;margin-bottom:30px;left:-100px; }
     }
 }
@@ -908,7 +908,8 @@ html.menu-open {
     @media (max-width: 991px) { flex-direction: column; gap: 36px; }
     @media (min-width: 768px)  { gap: 48px; }
     @media (min-width: 992px)  { gap: 60px; }
-    @media (min-width: 1200px) { gap: 80px; }
+    @media (min-width: 1200px) { gap: 80px; min-height:448px}
+    @media (min-width: 1600px) { min-height:550px}
 }
 
 // ── Panel image wrapper ──
@@ -940,7 +941,7 @@ html.menu-open {
         @media (min-width: 1200px) { max-width: 560px; }
     }
     @media (max-width: 991px) { align-items: center; text-align: center; }
-    @media (min-width: 768px) { gap: 24px; }
+    @media (min-width: 768px) { gap: 24px;height:100%; }
 }
 
 .features-panel__desc {
@@ -970,10 +971,10 @@ html.menu-open {
     justify-content: center;
     flex-shrink: 0;
     transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
-    border: 1px solid #E4E4E4;
+    border: var(--border-2);
     cursor: pointer;
     svg { display: block; flex-shrink: 0;position: relative; }
-
+    box-shadow: var(--box-shadow-3);
     &--prev {
         background: transparent;
         color: rgba(255, 255, 255, 0.65);
@@ -981,16 +982,10 @@ html.menu-open {
             left: 24px;
             @media (min-width: 1200px) { left: 30px;}
         }
-        &:hover:not(:disabled) {
-            border-color: rgba(255, 255, 255, 0.7);
-        }
     }
 
     &--next {
         color: #ffffff;
-        &:hover:not(:disabled) {
-            border-color: rgba(255, 255, 255, 0.7);
-        }
         svg {
             left: -24px;
             @media (min-width: 1200px) { left: -30px;}
@@ -1001,6 +996,7 @@ html.menu-open {
         opacity: 0.28;
         cursor: default;
         pointer-events: none;
+        box-shadow: none;
     }
 
     @media (min-width: 768px)  { width: 64px; height: 64px; }
@@ -1787,10 +1783,6 @@ html.menu-open {
 
 @media (min-width: 992px) {
 
-    // Reset exit delay (images disappear quickly on mouse-out)
-    .fc-img { transition-delay: 0ms; }
-
-    // ── Card 1 initial hidden states ──
     .fc1-interface { opacity: 0; transform: translateX(44px) translateY(10px); }
     .fc1-chat      { opacity: 0; transform: translateX(-38px); }
     .fc1-inbox     { opacity: 0; transform: translateX(-38px); }
@@ -1798,7 +1790,6 @@ html.menu-open {
     .fc1-many-more { opacity: 0; transform: translateY(26px); }
     .fc1-pointer   { opacity: 0; transform: translateX(-22px) translateY(-20px); }
 
-    // ── Card 2 initial hidden states ──
     .fc2-interface { opacity: 0; transform: translateY(42px); }
     .fc2-face--1   { opacity: 0; transform: translateX(-38px); }
     .fc2-face--2   { opacity: 0; transform: translateX(38px); }
@@ -1808,25 +1799,21 @@ html.menu-open {
     .fc2-face--6   { opacity: 0; transform: translateX(38px); }
     .fc2-draft     { opacity: 0; transform: translateX(32px); }
 
-    // ── Card 3 initial hidden states ──
     .fc3-main { opacity: 0; transform: translateY(46px); }
     .fc3-tree { opacity: 0; transform: translateX(30px) translateY(-22px); }
 
-    // ── Card 4 initial hidden states ──
     .fc4-main    { opacity: 0; transform: translateX(46px); }
     .fc4-puzzle  { opacity: 0; transform: translateY(-30px); }
     .fc4-update  { opacity: 0; transform: translateX(32px) translateY(-22px); }
     .fc4-message { opacity: 0; transform: translateX(-34px); }
 
-    // ── Hover: reveal all with staggered entrance ─────────────
-    .feat-card:hover {
+    .feat-card.is-visible {
 
         .fc-img {
             opacity: 1;
             transform: translate(0, 0);
         }
 
-        // Card 1 delays
         .fc1-interface { transition-delay: 0ms; }
         .fc1-many-more { transition-delay: 70ms; }
         .fc1-chat      { transition-delay: 60ms; }
@@ -1834,7 +1821,6 @@ html.menu-open {
         .fc1-pointer   { transition-delay: 130ms; }
         .fc1-edit      { transition-delay: 180ms; }
 
-        // Card 2 delays
         .fc2-interface { transition-delay: 0ms; }
         .fc2-face--4   { transition-delay: 40ms; }
         .fc2-face--1   { transition-delay: 60ms; }
@@ -1844,11 +1830,9 @@ html.menu-open {
         .fc2-face--3   { transition-delay: 130ms; }
         .fc2-face--6   { transition-delay: 160ms; }
 
-        // Card 3 delays
         .fc3-main { transition-delay: 0ms; }
         .fc3-tree { transition-delay: 90ms; }
 
-        // Card 4 delays
         .fc4-main    { transition-delay: 0ms; }
         .fc4-puzzle  { transition-delay: 60ms; }
         .fc4-update  { transition-delay: 90ms; }
@@ -2529,11 +2513,8 @@ html.menu-open {
     text-align: center;
     white-space: nowrap;
     cursor: pointer;
-    transition: opacity 0.25s ease, transform 0.15s ease;
+    transition: opacity 0.25s ease, transform 0.15s ease, background 0.25s ease;
 
-    &:hover {
-        opacity: 0.88;
-    }
 
     &:active {
         transform: scale(0.97);
@@ -2542,11 +2523,23 @@ html.menu-open {
     &--dark {
         background: var(--dark-color5);
         color: #ffffff;
+        @media (min-width: 992px) {
+            &:hover {
+                background: var(--success-color);
+                transform:translateY(-2px);
+            }
+        }
     }
 
     &--blue {
         background: var(--success-color2);
         color: #ffffff;
+        @media (min-width: 992px) {
+            &:hover {
+                background: var(--success-color);
+                transform:translateY(-2px);
+            }
+        }
     }
 }
 

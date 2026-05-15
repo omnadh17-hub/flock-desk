@@ -180,7 +180,6 @@ html.menu-open .side-nav-close {
   justify-content: center;
   background: var(--dark-color6);
   color: var(--light-color);
-  border: 2px solid var(--dark-color6);
   border-radius: 10px;
   padding: 9px 22px;
   font-size: var(--font-size-3);
@@ -189,12 +188,13 @@ html.menu-open .side-nav-close {
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
-  transition: background 0.28s ease, color 0.28s ease, border-color 0.28s ease;
+  transition: background 0.28s ease, color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
 }
 @media (min-width: 992px) {
   .btn-hdr:hover {
-    background: transparent;
-    color: var(--dark-color);
+    background: var(--success-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(66, 93, 232, 0.25);
   }
 }
 
@@ -399,9 +399,10 @@ html.menu-open .nav-overlay {
 }
 @media (min-width: 992px) {
   .btn-hero-primary:hover {
-    background: transparent;
-    color: var(--dark-color);
-    box-shadow: 0 8px 28px rgba(51, 52, 78, 0.18);
+    background: var(--success-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(66, 93, 232, 0.25);
+    border-color: var(--success-color);
   }
 }
 
@@ -857,7 +858,7 @@ html.menu-open .nav-overlay {
 }
 
 .trusted-sec {
-  background: #ffffff;
+  background: var(--tertiary-color);
   padding: 60px 0 48px;
 }
 @media (min-width: 768px) {
@@ -937,7 +938,7 @@ html.menu-open .nav-overlay {
 }
 
 .app-preview-sec {
-  background: #ffffff;
+  background: linear-gradient(to top, transparent calc(100% - 400px), var(--tertiary-color) calc(100% - 400px));
   padding-bottom: 60px;
 }
 @media (min-width: 768px) {
@@ -989,6 +990,7 @@ html.menu-open .nav-overlay {
 @media (min-width: 768px) {
   .app-preview-img--draft {
     display: block;
+    box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.08);
   }
 }
 @media (min-width: 1200px) {
@@ -1009,6 +1011,7 @@ html.menu-open .nav-overlay {
 @media (min-width: 768px) {
   .app-preview-img--opened {
     display: block;
+    box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.08);
   }
 }
 @media (min-width: 1200px) {
@@ -1160,6 +1163,12 @@ html.menu-open .nav-overlay {
 @media (min-width: 1200px) {
   .features-panel {
     gap: 80px;
+    min-height: 448px;
+  }
+}
+@media (min-width: 1600px) {
+  .features-panel {
+    min-height: 550px;
   }
 }
 
@@ -1205,6 +1214,7 @@ html.menu-open .nav-overlay {
 @media (min-width: 768px) {
   .features-panel__content {
     gap: 24px;
+    height: 100%;
   }
 }
 
@@ -1253,13 +1263,16 @@ html.menu-open .nav-overlay {
   justify-content: center;
   flex-shrink: 0;
   transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
-  border: 1px solid #E4E4E4;
+  border: var(--border-2);
   cursor: pointer;
 }
 .panel-nav-btn svg {
   display: block;
   flex-shrink: 0;
   position: relative;
+}
+.panel-nav-btn {
+  box-shadow: var(--box-shadow-3);
 }
 .panel-nav-btn--prev {
   background: transparent;
@@ -1273,14 +1286,8 @@ html.menu-open .nav-overlay {
     left: 30px;
   }
 }
-.panel-nav-btn--prev:hover:not(:disabled) {
-  border-color: rgba(255, 255, 255, 0.7);
-}
 .panel-nav-btn--next {
   color: #ffffff;
-}
-.panel-nav-btn--next:hover:not(:disabled) {
-  border-color: rgba(255, 255, 255, 0.7);
 }
 .panel-nav-btn--next svg {
   left: -24px;
@@ -1294,6 +1301,7 @@ html.menu-open .nav-overlay {
   opacity: 0.28;
   cursor: default;
   pointer-events: none;
+  box-shadow: none;
 }
 @media (min-width: 768px) {
   .panel-nav-btn {
@@ -2682,68 +2690,68 @@ html.menu-open .nav-overlay {
     opacity: 0;
     transform: translateX(-34px);
   }
-  .feat-card:hover .fc-img {
+  .feat-card.is-visible .fc-img {
     opacity: 1;
     transform: translate(0, 0);
   }
-  .feat-card:hover .fc1-interface {
+  .feat-card.is-visible .fc1-interface {
     transition-delay: 0ms;
   }
-  .feat-card:hover .fc1-many-more {
+  .feat-card.is-visible .fc1-many-more {
     transition-delay: 70ms;
   }
-  .feat-card:hover .fc1-chat {
+  .feat-card.is-visible .fc1-chat {
     transition-delay: 60ms;
   }
-  .feat-card:hover .fc1-inbox {
+  .feat-card.is-visible .fc1-inbox {
     transition-delay: 120ms;
   }
-  .feat-card:hover .fc1-pointer {
+  .feat-card.is-visible .fc1-pointer {
     transition-delay: 130ms;
   }
-  .feat-card:hover .fc1-edit {
+  .feat-card.is-visible .fc1-edit {
     transition-delay: 180ms;
   }
-  .feat-card:hover .fc2-interface {
+  .feat-card.is-visible .fc2-interface {
     transition-delay: 0ms;
   }
-  .feat-card:hover .fc2-face--4 {
+  .feat-card.is-visible .fc2-face--4 {
     transition-delay: 40ms;
   }
-  .feat-card:hover .fc2-face--1 {
+  .feat-card.is-visible .fc2-face--1 {
     transition-delay: 60ms;
   }
-  .feat-card:hover .fc2-face--2 {
+  .feat-card.is-visible .fc2-face--2 {
     transition-delay: 80ms;
   }
-  .feat-card:hover .fc2-draft {
+  .feat-card.is-visible .fc2-draft {
     transition-delay: 60ms;
   }
-  .feat-card:hover .fc2-face--5 {
+  .feat-card.is-visible .fc2-face--5 {
     transition-delay: 110ms;
   }
-  .feat-card:hover .fc2-face--3 {
+  .feat-card.is-visible .fc2-face--3 {
     transition-delay: 130ms;
   }
-  .feat-card:hover .fc2-face--6 {
+  .feat-card.is-visible .fc2-face--6 {
     transition-delay: 160ms;
   }
-  .feat-card:hover .fc3-main {
+  .feat-card.is-visible .fc3-main {
     transition-delay: 0ms;
   }
-  .feat-card:hover .fc3-tree {
+  .feat-card.is-visible .fc3-tree {
     transition-delay: 90ms;
   }
-  .feat-card:hover .fc4-main {
+  .feat-card.is-visible .fc4-main {
     transition-delay: 0ms;
   }
-  .feat-card:hover .fc4-puzzle {
+  .feat-card.is-visible .fc4-puzzle {
     transition-delay: 60ms;
   }
-  .feat-card:hover .fc4-update {
+  .feat-card.is-visible .fc4-update {
     transition-delay: 90ms;
   }
-  .feat-card:hover .fc4-message {
+  .feat-card.is-visible .fc4-message {
     transition-delay: 130ms;
   }
 }
@@ -3467,10 +3475,7 @@ html.menu-open .nav-overlay {
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
-  transition: opacity 0.25s ease, transform 0.15s ease;
-}
-.footer-btn:hover {
-  opacity: 0.88;
+  transition: opacity 0.25s ease, transform 0.15s ease, background 0.25s ease;
 }
 .footer-btn:active {
   transform: scale(0.97);
@@ -3479,9 +3484,21 @@ html.menu-open .nav-overlay {
   background: var(--dark-color5);
   color: #ffffff;
 }
+@media (min-width: 992px) {
+  .footer-btn--dark:hover {
+    background: var(--success-color);
+    transform: translateY(-2px);
+  }
+}
 .footer-btn--blue {
   background: var(--success-color2);
   color: #ffffff;
+}
+@media (min-width: 992px) {
+  .footer-btn--blue:hover {
+    background: var(--success-color);
+    transform: translateY(-2px);
+  }
 }
 
 .footer-social-col {
